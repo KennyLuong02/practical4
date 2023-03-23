@@ -17,13 +17,13 @@ PersonList createPersonList(int n) {
         p1.people[i].age = 1;
     }
 
-    for (int i = 0; i < n; i++) {
-        cout << p1.people[i].name << " " << p1.people[i].age << endl;
-    }
+    // for (int i = 0; i < n; i++) {
+    //     cout << p1.people[i].name << " " << p1.people[i].age << endl;
+    // }
 
-    cout << p1.numPeople << endl;
+    // cout << p1.numPeople << endl;
 
     delete[] p1.people;
-    
+
     return p1;
 }

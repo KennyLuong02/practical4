@@ -7,12 +7,10 @@ using namespace std;
 PersonList deepCopyPersonList(PersonList pl) {
     // Original struct
     int n = 5;
+    cout << "Original list:" << endl;
     for (int i = 0; i < n; i++) {
-        cout << pl.people[i].name << " " << pl.people[i].age << endl;
+        cout << "Person " << i << ": " << pl.people[i].name << ", " << pl.people[i].age << endl;
     }
-
-    cout << pl.numPeople << endl;
-    cout << endl;
 
     //New struct
     PersonList p2;
@@ -25,11 +23,10 @@ PersonList deepCopyPersonList(PersonList pl) {
         p2.people[i].age = pl.people[i].age;
     }
 
+    cout << "New list:" << endl;
     for (int i = 0; i < n; i++) {
-        cout << p2.people[i].name << " " << p2.people[i].age << endl;
+        cout << "Person " << i << ": " << p2.people[i].name << ", " << p2.people[i].age << endl;
     }
-
-    cout << p2.numPeople << endl;
 
     delete[] p2.people;
     
