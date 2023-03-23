@@ -9,7 +9,7 @@ PersonList deepCopyPersonList(PersonList pl) {
     int n = 5;
     cout << "Original list:" << endl;
     for (int i = 0; i < n; i++) {
-        cout << "Person " << i << ": " << pl.people[i].name << ", " << pl.people[i].age << endl;
+        cout << "Person " << i + 1 << ": " << pl.people[i].name << ", " << pl.people[i].age << endl;
     }
 
     //New struct
@@ -25,7 +25,7 @@ PersonList deepCopyPersonList(PersonList pl) {
 
     cout << "New list:" << endl;
     for (int i = 0; i < n; i++) {
-        cout << "Person " << i << ": " << p2.people[i].name << ", " << p2.people[i].age << endl;
+        cout << "Person " << i + 1 << ": " << p2.people[i].name << ", " << p2.people[i].age << endl;
     }
 
     delete[] p2.people;
