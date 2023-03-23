@@ -15,11 +15,11 @@ Person* createPersonArray(int n) {
         p[i] = p1;
     }
 
-    for (int i = 0; i < n; i++) {
-        cout << p[i].name << " " << p[i].age << endl;
-    }
+    // for (int i = 0; i < n; i++) {
+    //     cout << p[i].name << " " << p[i].age << endl;
+    // }
 
-    delete[] p;
+    // delete[] p;
 
     return p;
 }

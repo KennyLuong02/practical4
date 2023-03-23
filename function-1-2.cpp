@@ -23,7 +23,7 @@ PersonList createPersonList(int n) {
 
     // cout << p1.numPeople << endl;
 
-    delete[] p1.people;
+    // delete[] p1.people;
 
     return p1;
 }

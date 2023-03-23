@@ -28,7 +28,7 @@ PersonList deepCopyPersonList(PersonList pl) {
         cout << "Person " << i + 1 << ": " << p2.people[i].name << ", " << p2.people[i].age << endl;
     }
 
-    delete[] p2.people;
+    // delete[] p2.people;
     
     return p2;
 }
